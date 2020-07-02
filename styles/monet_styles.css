@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Lemonada;
+    src: url("fonts/lemonada-v9-latin-regular.svg") format("svg");
+    src: url("fonts/lemonada-v9-latin-regular.woff") format("woff");
+}
+@font-face {
+    font-family: Airstream;
+    src: url("fonts/Airstream-webfont.svg") format("svg");
+    src: url("fonts/Airstream-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/roboto-v20-latin-regular.svg") format("svg");
+    src: url("fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+.thumbnails-list {
+    list-style: none;
+    overflow-y: auto;
+    max-height: 35vh;
+    padding: 0;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.logo-title {
+    font-family: Lemonada;
+    font-size: 6vw;
+    background-color: #f9b665;
+    text-align: center;
+}
+.thumbnails-image {
+    max-width: 21vw;
+    height: 17vw;
+    padding-top: 0.5vw;
+    border-radius: 1.5vw;
+}
+.thumbnails-title {
+    font-family: Roboto;
+    display: block;
+    text-align: center;
+    font-size: 3.7vw;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+.thumbnails-item {
+    background-color: #ffd7b9;
+    border: solid 1px #ffa96f;
+    margin-top: 3vw;
+    text-align: center;
+    width: 22vw;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #d4dfe4;
+    margin: 0 0 1vw 0;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.detail-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.detail-image {
+    max-width: 80vw;
+    border: solid 2px #565656;
+}
+.detail-title {
+    font-family: Airstream;
+    font-size: 5.8vw;
+    background-color: rgba(255, 140, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 2vw;
+    left: 5vw;
+}
+body, html {
+    height: 100%;
+}
+
+@media (min-width: 568px) {
+    .main-content {
+        flex-direction: row;
+        justify-content: left;
+    }
+    .logo-title {
+        margin: 1vw 0 0 0;
+        font-size: 3vw;
+    }
+    .detail-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .detail-frame {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    .detail-image {
+        height: 40vw;
+    }
+    .detail-title {
+        font-size: 4vw;
+        left: 8vw;
+    }
+    .thumbnails-list {
+        flex-direction: column;
+        order: -1;
+        flex-wrap: nowrap;
+        max-height: 84vh;
+        overflow-y: auto;
+        justify-content: left;
+        margin: 1vw 0 0 0;
+    }
+    .thumbnails-item {
+        margin: 0;
+        width: 19vw;
+    }
+    .thumbnails-item+.thumbnails-item {
+        margin-top: 8px;
+    }
+    .thumbnails-image {
+        height: 13vw;
+        max-width: 18vw;
+        padding-top: 0.5vw;
+        border-radius: 1vw;
+    }
+    .thumbnails-title {
+        font-size: 2.2vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-title {
+        font-size: 2.3vw;
+    }
+    .detail-title {
+        font-size: 2.9vw;
+    }
+    .thumbnails-title {
+        font-size: 1.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
