@@ -28,6 +28,7 @@
     font-size: 6vw;
     background-color: #f9b665;
     text-align: center;
+    margin: 1vw 0 5vw 0;
 }
 .thumbnails-image {
     max-width: 21vw;
@@ -52,11 +53,23 @@ a {
     text-align: center;
     width: 22vw;
 }
+.thumbnails-item:hover{
+    background-color: #ffebe0;
+    transition-duration: 0.5s;
+}
+.thumbnails-item:hover .thumbnails-title{
+    color: #e24f00;
+    transition-duration: 0.5s;
+}
+.thumbnails-item:hover .thumbnails-image{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
 body {
     display: flex;
     flex-direction: column;
     background-color: #d4dfe4;
-    margin: 0 0 1vw 0;
+    margin: 0;
 }
 .main-content {
     display: flex;
@@ -83,6 +96,11 @@ body {
     bottom: 2vw;
     left: 5vw;
 }
+.detail-title:hover {
+    background-color: rgba(255, 140, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    transition-duration: 0.5s;
+}
 body, html {
     height: 100%;
 }
@@ -93,13 +111,13 @@ body, html {
         justify-content: left;
     }
     .logo-title {
-        margin: 1vw 0 0 0;
+        margin: 0.5vw 0 1.5vw 0;
         font-size: 3vw;
     }
     .detail-container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-grow: 1;
     }
     .detail-frame {
@@ -108,7 +126,7 @@ body, html {
         flex-grow: 1;
     }
     .detail-image {
-        height: 40vw;
+        max-height: 46vw;
     }
     .detail-title {
         font-size: 4vw;
@@ -121,7 +139,7 @@ body, html {
         max-height: 84vh;
         overflow-y: auto;
         justify-content: left;
-        margin: 1vw 0 0 0;
+        margin: 0;
     }
     .thumbnails-item {
         margin: 0;
@@ -144,6 +162,9 @@ body, html {
 @media (min-width: 1024px) {
     .logo-title {
         font-size: 2.3vw;
+    }
+    .detail-image {
+        max-height: 41vw;
     }
     .detail-title {
         font-size: 2.9vw;
